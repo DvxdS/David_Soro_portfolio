@@ -1,0 +1,48 @@
+.spin-on-hover {
+    animation: spinAnimation 1s linear infinite;
+  }
+  
+  @keyframes spinAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  .animated-letter {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .animated-letter:hover {
+    transform: translateY(-5px);
+  }
+  
+
+  @keyframes shake {
+    0% { transform: rotateZ(0deg); }
+    10% { transform: rotateZ(-10deg); }
+    20% { transform: rotateZ(10deg); }
+    30% { transform: rotateZ(-10deg); }
+    40% { transform: rotateZ(10deg); }
+    50% { transform: rotateZ(-10deg); }
+    60% { transform: rotateZ(10deg); }
+    70% { transform: rotateZ(-10deg); }
+    80% { transform: rotateZ(10deg); }
+    90% { transform: rotateZ(-10deg); }
+    100% { transform: rotateZ(0deg); }
+  }
+  
+  .shake-animation {
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  .break-words {
+    word-break: break-word;
+  }
+  
