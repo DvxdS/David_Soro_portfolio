@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Stack from './components/stacks'
+import Skills from './components/skills'
+import Projects from './components/projects'
 const App = () => {
     return(
         <BrowserRouter>
@@ -18,6 +20,13 @@ const App = () => {
 
                 <div>
                     <Stack/>
+
+                </div>
+                <div>
+                <Skills/>
+                </div>
+                <div>
+                    <Projects/>
                 </div>
             </div>
         </div>
