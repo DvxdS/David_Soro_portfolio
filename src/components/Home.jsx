@@ -7,6 +7,7 @@ import './home.css'; // Import custom CSS file for styling and animations
 
 const Home = () => {
   const [spins, setSpins] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const imageRef = useRef(null);
 
   const handleMouseEnter = () => {
@@ -19,21 +20,15 @@ const Home = () => {
   };
 
   const handleTwitterClick = () => {
-    // Handle click for Twitter icon
     window.location.href = 'https://twitter.com/DavidSoro29';
-    // Redirect or perform any other action
   };
 
   const handleGitHubClick = () => {
-    // Handle click for GitHub icon
     window.location.href = 'https://github.com/DvxdS';
-    // Redirect or perform any other action
   };
 
   const handleLinkedInClick = () => {
-    // Handle click for LinkedIn icon
     window.location.href = 'https://linkedin.com/in/your-linkedin-profile';
-    // Redirect or perform any other action
   };
 
   const handleAnimationEnd = () => {
@@ -45,9 +40,18 @@ const Home = () => {
     }
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <div className="grid md:grid-cols-2 gap-8">
-      <div className="ml-8">
+    <div className="p-8 md:grid md:grid-cols-2 md:gap-8">
+      <div className={`md:ml-8 ${isMobile ? 'md:order-2' : ''}`}>
         <h2 className="mt-10 font-semibold text-lg text-neutral-600 flex items-center">
           Hi there, I am{' '}
           <img
@@ -103,7 +107,7 @@ const Home = () => {
       <img
         src={Hero}
         alt="hero"
-        className="max-w-full md:max-w-xs mx-auto"
+        className={`max-w-full md:max-w-xs mx-auto ${isMobile ? 'mt-8' : ''}`}
         ref={imageRef}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}

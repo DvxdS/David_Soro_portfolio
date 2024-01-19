@@ -17,17 +17,17 @@ const Stack = () => {
         <span className="font-bold text-center text-lg mb-10 text-orange-400">My Tech Stack</span>
       </div>
 
-      <div className="flex">
+      <div className="flex flex-col md:flex-row">
         {/* Left grid - Languages */}
-        <div className="flex flex-col">
-          <span className="font-bold text-center text-orange-400 ml-10 text-xl flex items-center">
+        <div className="flex flex-col w-full md:w-1/2">
+          <span className="font-bold text-center text-orange-400 text-xl flex items-center mb-5 md:mb-0">
             Languages{' '}
             <FaCode
               className="mr-2 text-orange-400 ml-2"
               style={{ width: '30px', height: '30px', marginLeft: '5px' }}
             />
           </span>
-          <div className="grid grid-cols-2 gap-4 mt-10 ml-10">
+          <div className="grid grid-cols-2 gap-4 mt-5">
             <div className="w-20 h-20">
               <img src={java} alt="java" className="logo-bounce" />
             </div>
@@ -44,15 +44,15 @@ const Stack = () => {
         </div>
 
         {/* Right grid - Tools */}
-        <div className="flex flex-col ml-auto">
-          <span className="font-bold text-center text-orange-400 ml-10 text-xl flex items-center">
+        <div className="flex flex-col w-full md:w-1/2 mt-5 md:mt-0">
+          <span className="font-bold text-center text-orange-400 text-xl flex items-center mb-5 md:mb-0">
             Tools{' '}
             <FaTools
               className="mr-2 text-orange-400 ml-2"
               style={{ width: '30px', height: '30px', marginLeft: '5px' }}
             />
           </span>
-          <div className="grid grid-cols-2 gap-4 mt-10 mr-10">
+          <div className="grid grid-cols-2 gap-4 mt-5">
             <div className="w-20 h-20">
               <img src={vscode} alt="visual studio code" className="logo-bounce" />
             </div>
@@ -73,3 +73,4 @@ const Stack = () => {
 };
 
 export default Stack;
+
