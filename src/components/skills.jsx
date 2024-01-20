@@ -4,6 +4,9 @@ import { FaDesktop, FaServer } from 'react-icons/fa';
 const Skills = () => {
   return (
     <div className="p-8 md:p-20 bg-white mt-10">
+      <div class="text-center md:max-w-xl lg:max-w-3xl">
+        <h2 class="mb-12 px-6 text-3xl font-bold text-orange-400">My Skills</h2>
+      </div>
       <div className="flex flex-col md:flex-row items-center justify-center">
         <div className="w-full md:w-1/2 p-4 mb-4 md:mb-0 md:mr-4 bg-blue-100 rounded-lg">
           <FaDesktop className="text-4xl mb-2 text-blue-400 mx-auto" />

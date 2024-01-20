@@ -50,6 +50,7 @@ const Home = () => {
   }, []);
 
   return (
+    <section id= "home">
     <div className="p-8 md:grid md:grid-cols-2 md:gap-8">
       <div className={`md:ml-8 ${isMobile ? 'md:order-2' : ''}`}>
         <h2 className="mt-10 font-semibold text-lg text-neutral-600 flex items-center">
@@ -114,6 +115,7 @@ const Home = () => {
         onAnimationEnd={handleAnimationEnd}
       />
     </div>
+    </section>
   );
 };
 

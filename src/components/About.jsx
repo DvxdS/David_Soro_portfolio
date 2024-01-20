@@ -9,7 +9,9 @@ const About = () => {
       <img src={Hero} alt="hero" className='w-full lg:w-80 h-80 lg:order-1 mb-5 lg:mb-0' />
       <div className="ml-10 lg:w-1/2">
         <div>
-          <h1 className='text-orange-400 font-bold text-lg antialiased mt-5 lg:mt-0'>About Me</h1>
+        <div class="text-center md:max-w-xl lg:max-w-3xl">
+        <h2 class="mb-12 px-6 text-3xl font-bold text-orange-400">About Me</h2>
+      </div>
           <h2 className='text-neutral-600 font-bold'>A dedicated Full Stack developer, from Côte d’Ivoire</h2>
           <span className="text-sm break-words">
             From marketing to software engineering, I am David Soro, a proud 23-year-old Ivorian developer.

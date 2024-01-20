@@ -24,7 +24,9 @@ import Cv from '../assets/David_Soro_CV.pdf';
         <div className='flex items-center ml-auto space-x-10   '>
         <ul className={`list-none sm:flex flex-row ${toggle ? '' : 'hidden'}`}>
         <li className={`${active === '/' ? 'text-orange-400' : 'text-black'} hover:text-orange-400 font-bold mr-12`}>
-            <Link to="/">Home</Link>
+        <Link to="home" smooth={true} duration={500} offset={-70}>
+              Home
+              </Link>
           </li>
         <li className={`${active === '/About' ? 'text-orange-400' : 'text-neutral-600'} hover:text-orange-400 font-bold mr-12`}>
             <Link to="/About">About</Link>
@@ -36,7 +38,7 @@ import Cv from '../assets/David_Soro_CV.pdf';
             <Link to="/Projects">Projects</Link>
         </li>
         <li className={`${active === '/Contacts' ? 'text-orange-400' : 'text-neutral-600'} hover:text-orange-400 font-bold mr-12`}>
-            <Link to="/Contacts">Contatcts</Link>
+            <Link to="/Contacts">Contacts</Link>
         </li>
 
             <div className="flex items-center">
