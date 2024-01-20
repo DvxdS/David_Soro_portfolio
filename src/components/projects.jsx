@@ -4,7 +4,7 @@ import Car from '../assets/car.png';
 import Heal from '../assets/healtech.png';
 const projects = () => {
   return (
-    <div class="container my-24 mx-auto md:px-6">
+    <div class="container my-24 mx-auto md:px-6" id="Projects">
   
   <section class="mb-32 text-center lg:text-left">
     <h2 class="mb-12 text-center text-3xl font-bold text-orange-400">

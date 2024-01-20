@@ -3,7 +3,7 @@ import { FaDesktop, FaServer } from 'react-icons/fa';
 
 const Skills = () => {
   return (
-    <div className="p-8 md:p-20 bg-white mt-10">
+    <div className="p-8 md:p-20 bg-white mt-10" id="Skills">
       <div class="text-center md:max-w-xl lg:max-w-3xl">
         <h2 class="mb-12 px-6 text-3xl font-bold text-orange-400">My Skills</h2>
       </div>

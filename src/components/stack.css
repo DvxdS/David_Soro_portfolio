@@ -29,6 +29,7 @@
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    margin: 8px;
   }
   
 
@@ -48,4 +49,7 @@
     animation-fill-mode: forwards;
   }
   
+  .grid-container {
+    grid-gap: 4px; /* Adjust this value to reduce or increase space */
+  }
   

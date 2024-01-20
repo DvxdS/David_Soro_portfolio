@@ -5,7 +5,7 @@ import './home.css';
 
 const About = () => {
   return (
-    <div className="flex flex-col lg:flex-row ml-8 mt-10 pt-10">
+    <div className="flex flex-col lg:flex-row ml-8 mt-10 pt-10" id="About">
       <img src={Hero} alt="hero" className='w-full lg:w-80 h-80 lg:order-1 mb-5 lg:mb-0' />
       <div className="ml-10 lg:w-1/2">
         <div>

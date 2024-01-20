@@ -13,21 +13,21 @@ import './stack.css';
 const Stack = () => {
   return (
     <div className="p-20 bg-white mt-10 pt-10">
-      <div class="text-center md:max-w-xl lg:max-w-3xl">
-        <h2 class="mb-12 px-6 text-3xl font-bold text-orange-400">My Stack</h2>
+      <div className="flex items-center justify-center w-full">
+        <span className="font-bold text-center text-lg mb-10 text-orange-400">My Tech Stack</span>
       </div>
 
       <div className="flex flex-col md:flex-row">
         {/* Left grid - Languages */}
-        <div className="flex flex-col w-full md:w-1/2">
-          <span className="font-bold text-center text-orange-400 text-xl flex items-center mb-5 md:mb-0">
+        <div className="flex flex-col md:w-1/2">
+          <span className="font-bold text-center text-orange-400 text-xl flex items-center">
             Languages{' '}
             <FaCode
               className="mr-2 text-orange-400 ml-2"
               style={{ width: '30px', height: '30px', marginLeft: '5px' }}
             />
           </span>
-          <div className="grid grid-cols-2 gap-4 mt-5">
+          <div className="grid grid-cols-2 gap-2 mt-10 md:ml-10 grid-container">
             <div className="w-20 h-20">
               <img src={java} alt="java" className="logo-bounce" />
             </div>
@@ -44,15 +44,15 @@ const Stack = () => {
         </div>
 
         {/* Right grid - Tools */}
-        <div className="flex flex-col w-full md:w-1/2 mt-5 md:mt-0">
-          <span className="font-bold text-center text-orange-400 text-xl flex items-center mb-5 md:mb-0">
+        <div className="flex flex-col md:w-1/2">
+          <span className="font-bold text-center text-orange-400 text-xl flex items-center">
             Tools{' '}
             <FaTools
               className="mr-2 text-orange-400 ml-2"
               style={{ width: '30px', height: '30px', marginLeft: '5px' }}
             />
           </span>
-          <div className="grid grid-cols-2 gap-4 mt-5">
+          <div className="grid grid-cols-2 gap-2 mt-10 md:mr-10">
             <div className="w-20 h-20">
               <img src={vscode} alt="visual studio code" className="logo-bounce" />
             </div>
@@ -73,4 +73,3 @@ const Stack = () => {
 };
 
 export default Stack;
-

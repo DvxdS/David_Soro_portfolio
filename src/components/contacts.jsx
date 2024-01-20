@@ -6,8 +6,8 @@ import { FaLinkedin } from 'react-icons/fa';
 
 const contacts = () => {
   return (
-    <section id = "Contacts">
-    <div>
+    
+    <div id="Contacts">
 
 
 <div class="container my-30 mx-auto md:px-6  ">
@@ -159,7 +159,7 @@ const contacts = () => {
 
 </div>   
     </div>
-    </section>
+    
   )
 }
 
