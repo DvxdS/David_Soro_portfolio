@@ -51,7 +51,7 @@ const Contacts = () => {
   <section class="mb-32">
     <div class="flex justify-center">
       <div class="text-center md:max-w-xl lg:max-w-3xl">
-        <h2 class="mb-12 px-6 text-3xl font-bold text-orange-400">Get in touch with me</h2>
+        <h2 class="mb-12 px-6 text-3xl font-bold text-orange-400">Contact me</h2>
       </div>
     </div>
 
