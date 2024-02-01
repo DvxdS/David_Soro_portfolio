@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Hero from '../assets/hero2.png';
+import { Link as ScrollLink} from 'react-scroll';
 import './home.css';
 
 const About = () => {
@@ -31,11 +31,11 @@ const About = () => {
           <h2 className='text-neutral-600 font-semibold mt-5'>Let's work together!</h2>
 
           <div>
-            <Link to="/contact">
-              <button className="inline-block rounded-full bg-orange-400 text-white text-xs px-6 pb-2 pt-2.5 font-medium mt-3 shadow-[0_4px_9px_-4px_#C25802] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(194,88,2,0.3),0_4px_18px_0_rgba(194,88,2,0.2)]">
+          <ScrollLink to="Contacts" smooth={true} duration={500}>
+          <button className="inline-block rounded-full bg-orange-400 text-white text-xs px-6 pb-2 pt-2.5 font-medium mt-3 shadow-[0_4px_9px_-4px_#C25802] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(194,88,2,0.3),0_4px_18px_0_rgba(194,88,2,0.2)]">
                 Hire me
-              </button>
-            </Link>
+            </button>
+       </ScrollLink>
           </div>
         </div>
       </div>

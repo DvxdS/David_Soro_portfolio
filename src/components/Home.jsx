@@ -1,8 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react';
 import Hero from '../assets/hero.png';
 import Hand from '../assets/hand.png';
-import { Link } from 'react-router-dom';
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { Link as ScrollLink} from 'react-scroll';
 import './home.css'; // Import custom CSS file for styling and animations
 
 const Home = () => {
@@ -20,15 +20,15 @@ const Home = () => {
   };
 
   const handleTwitterClick = () => {
-    window.location.href = 'https://twitter.com/DavidSoro29';
+    window.open('https://twitter.com/TheLazy_Codeur', '_blank');
   };
-
+  
   const handleGitHubClick = () => {
-    window.location.href = 'https://github.com/DvxdS';
+    window.open('https://github.com/DvxdS', '_blank');
   };
-
+  
   const handleLinkedInClick = () => {
-    window.location.href = 'https://linkedin.com/in/your-linkedin-profile';
+    window.open('https://www.linkedin.com/in/david-soro-b19128227/', '_blank');
   };
 
   const handleAnimationEnd = () => {
@@ -83,27 +83,27 @@ const Home = () => {
             <h2 className="mt-3 font-semibold text-lg text-neutral-600">Let's talk!</h2>
           </div>
           <div>
-            <Link to="/contact">
-              <button className="inline-block rounded-full bg-orange-400 text-white text-xs px-6 pb-2 pt-2.5 font-medium mt-3 shadow-[0_4px_9px_-4px_#C25802] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(194,88,2,0.3),0_4px_18px_0_rgba(194,88,2,0.2)]">
-                Get in touch
-              </button>
-            </Link>
-            <Link to="/project">
-              <button className="inline-block rounded-full border-2 border-orange-200 text-orange-400 text-xs px-6 pb-2 pt-2.5 font-medium mt-3 shadow-[0_4px_9px_-4px_#C25802] transition duration-150 ease-in-out hover:bg-orange-100 hover:text-white hover:shadow-none w-[130px] md:w-auto ml-5">
-                Project
-              </button>
-            </Link>
-            <div className="flex justify-start mt-5">
-              <a href="https://twitter.com/your-twitter-profile" onClick={handleTwitterClick}>
-                <FaTwitter className="text-blue-500 text-2xl mx-2 hover:text-blue-700" />
-              </a>
-              <a href="https://linkedin.com/in/your-linkedin-profile" onClick={handleLinkedInClick}>
-                <FaLinkedin className="text-blue-500 text-2xl mx-2 hover:text-blue-700" />
-              </a>
-              <a href="https://github.com/your-github-profile" onClick={handleGitHubClick}>
-                <FaGithub className="text-gray-700 text-2xl mx-2 hover:text-gray-900" />
-              </a>
-            </div>
+          <ScrollLink to="Contacts" smooth={true} duration={500}>
+        <button className="inline-block rounded-full bg-orange-400 text-white text-xs px-6 pb-2 pt-2.5 font-medium mt-3 shadow-[0_4px_9px_-4px_#C25802] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(194,88,2,0.3),0_4px_18px_0_rgba(194,88,2,0.2)]">
+          Get in touch
+        </button>
+      </ScrollLink>
+            <ScrollLink to="Projects" smooth={true} duration={500}>
+          <button className="inline-block rounded-full border-2 border-orange-200 text-orange-400 text-xs px-6 pb-2 pt-2.5 font-medium mt-3 shadow-[0_4px_9px_-4px_#C25802] transition duration-150 ease-in-out hover:bg-orange-100 hover:text-white hover:shadow-none w-[130px] md:w-auto ml-5">
+          Projects
+          </button>
+      </ScrollLink>
+      <div className="flex justify-start mt-5">
+       <span onClick={handleTwitterClick} style={{ cursor: 'pointer' }}>
+        <FaTwitter className="text-blue-500 text-2xl mx-2 hover:text-blue-700" />
+       </span>
+      <span onClick={handleLinkedInClick} style={{ cursor: 'pointer' }}>
+      <FaLinkedin className="text-blue-500 text-2xl mx-2 hover:text-blue-700" />
+      </span>
+      <span onClick={handleGitHubClick} style={{ cursor: 'pointer' }}>
+      <FaGithub className="text-gray-700 text-2xl mx-2 hover:text-gray-900" />
+      </span>
+      </div>
           </div>
         </div>
 
