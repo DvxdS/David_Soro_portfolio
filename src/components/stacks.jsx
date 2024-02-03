@@ -13,9 +13,9 @@ import './stack.css';
 const Stack = () => {
   return (
     <div className="p-20 bg-white mt-10 pt-10">
-      <div className="flex items-center justify-center w-full">
-        <span className="font-bold text-center text-lg mb-10 text-orange-400">My Tech Stack</span>
-      </div>
+      <h2 class="mb-12 text-center text-3xl font-bold text-orange-400">
+      My Tech Stack
+    </h2>
 
       <div className="flex flex-col md:flex-row">
         {/* Left grid - Languages */}

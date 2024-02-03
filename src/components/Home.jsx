@@ -107,29 +107,33 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Hero image */}
-        <div className="relative">
-          <img
-            src={Hero}
-            alt="hero"
-            className="max-w-full mx-auto md:max-w-xs"
-            ref={imageRef}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            onAnimationEnd={handleAnimationEnd}
-          />
-          {isMobile && (
-            <img
-              src={Hero}
-              alt="hero"
-              className="max-w-full mx-auto mt-8 absolute top-0 left-0"
-              ref={imageRef}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              onAnimationEnd={handleAnimationEnd}
-            />
-          )}
-        </div>
+       {/* Hero image */}
+       <div className='content mt-16'>
+  <div className="relative">
+  {isMobile ? (
+    <img
+      src={Hero}
+      alt="hero"
+      className="max-w-full mx-auto max-h-screen"
+      ref={imageRef}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onAnimationEnd={handleAnimationEnd}
+    />
+  ) : (
+    <img
+      src={Hero}
+      alt="hero"
+      className="max-w-full mx-auto max-h-screen"
+      ref={imageRef}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onAnimationEnd={handleAnimationEnd}
+    />
+  )}
+</div>
+</div>
+
       </div>
     </section>
   );

@@ -1,0 +1,21 @@
+/* LogoAnimation.css */
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .logo-container {
+    animation: rotate 6s linear infinite; /* Adjust the duration and timing function as needed */
+  }
+  
+  .logo {
+    /* Your existing styles for the logo go here */
+    cursor: pointer;
+    /* Add any other styles you want to apply to the logo */
+  }
+  
