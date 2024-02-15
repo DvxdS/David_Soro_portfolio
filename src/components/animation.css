@@ -1,29 +1,36 @@
-/* OpeningAnimation.css */
+/* Animation.css */
 
 .animation {
-    /* Add any initial styles here */
-  }
-  
-  .fade-in {
-    opacity: 0;
-    animation: fadeIn 1.5s ease-in-out forwards, scaleUp 1.5s ease-in-out forwards;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes scaleUp {
-    from {
-      transform: scale(0.5);
-    }
-    to {
-      transform: scale(1);
-    }
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff; /* Background color for the animation */
+  z-index: 999; /* Ensure it's on top of other elements */
+  opacity: 1;
+  transition: opacity 1s ease-in-out; /* Add a smooth transition for opacity */
+}
+
+/* This class ensures visibility initially */
+.visible {
+  opacity: 1;
+}
+
+/* Set opacity to 0 once animation is complete */
+.animation:not(.visible) {
+  opacity: 0;
+}
+
+.animation-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  /* Add styles for the text */
+}

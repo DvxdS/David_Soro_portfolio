@@ -5,16 +5,25 @@ import './animation.css';
 import LogoAnimation from './LogoAnimation'; // Assuming you have a separate LogoAnimation component
 
 const Animation = () => {
-  const [animate, setAnimate] = useState(false);
+  const [showAnimation, setShowAnimation] = useState(true); // Initially set to true
 
   useEffect(() => {
-    setAnimate(true);
+    // Set to false after 2 seconds (adjust the duration as needed)
+    const timeout = setTimeout(() => {
+      setShowAnimation(false);
+    }, 2000);
+
+    // Clear the timeout to prevent memory leaks
+    return () => clearTimeout(timeout);
   }, []);
 
   return (
-    <div className={`animation ${animate ? 'fade-in' : ''}`}>
-      <LogoAnimation />
-      {/* Any additional opening animation content goes here */}
+    <div className={`animation ${showAnimation ? 'visible' : ''}`}>
+      {/* Your opening animation content goes here */}
+      <div className="animation-content">
+        <LogoAnimation/>
+        
+      </div>
     </div>
   );
 };
