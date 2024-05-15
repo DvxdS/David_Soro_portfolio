@@ -7,7 +7,7 @@ const LogoAnimation = () => {
   return (
     <div className="logo-container">
       <span className="logo">
-        Dav<span className="text-orange-400">.dev</span>
+        Dav<span className="text-cyan-600">.dev</span>
       </span>
     </div>
   );

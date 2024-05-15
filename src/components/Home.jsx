@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import Hero from '../assets/hero.png';
+import Hero from '../assets/portf_img.png';
 import Hand from '../assets/hand.png';
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { Link as ScrollLink} from 'react-scroll';
@@ -51,10 +51,10 @@ const Home = () => {
 
   return (
     <section id="home">
-      <div className="p-8 md:grid md:grid-cols-2 md:gap-8">
-        <div className={`md:ml-8 ${isMobile ? 'md:order-2' : ''}`}>
+      <div className="p-8 md:grid md:grid-cols-2 md:gap-8 mt-3">
+        <div className={`md:ml-8 ${isMobile ? 'md:order-2' : ''} mt-6`}>
           {/* Content for larger screens */}
-          <h2 className="mt-10 font-semibold text-lg text-neutral-600 flex items-center">
+          <h2 className="mt-10 font-semibold text-3xl text-neutral-600 flex items-center">
             Hi there, I am{' '}
             <img
               src={Hand}
@@ -63,7 +63,7 @@ const Home = () => {
               style={{ width: '30px', height: '30px', marginLeft: '5px' }}
             />
           </h2>
-          <span className="mt-5 text-4xl md:text-7xl text-orange-400 font-extrabold tracking-wide">
+          <span className="mt-5 text-4xl md:text-7xl text-cyan-600 font-extrabold tracking-wide">
             <span className="animated-letter">D</span>
             <span className="animated-letter">a</span>
             <span className="animated-letter">v</span>
@@ -75,21 +75,21 @@ const Home = () => {
             <span className="animated-letter">r</span>
             <span className="animated-letter">o</span>
           </span>
-          <h2 className="mt-3 font-semibold text-lg text-neutral-600">A Full-stack web developer</h2>
+          <h2 className="mt-3 font-semibold text-3xl text-cyan-800">A Software Engineer</h2>
           <div className="mt-5">
-            <p className="text-sm md:text-base">
+            <p className="text-2xl md:text-base">
               Focusing on creating effective web apps that fit the user's needs and solve real-world problems
             </p>
             <h2 className="mt-3 font-semibold text-lg text-neutral-600">Let's talk!</h2>
           </div>
           <div>
           <ScrollLink to="Contacts" smooth={true} duration={500}>
-        <button className="inline-block rounded-full bg-orange-400 text-white text-xs px-6 pb-2 pt-2.5 font-medium mt-3 shadow-[0_4px_9px_-4px_#C25802] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(194,88,2,0.3),0_4px_18px_0_rgba(194,88,2,0.2)]">
+        <button className="inline-block rounded-full bg-cyan-950 text-white text-xs px-6 pb-2 pt-2.5 font-medium mt-3 shadow-[0_4px_9px_-4px_#C25802] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(194,88,2,0.3),0_4px_18px_0_rgba(194,88,2,0.2)]">
           Get in touch
         </button>
       </ScrollLink>
             <ScrollLink to="Projects" smooth={true} duration={500}>
-          <button className="inline-block rounded-full border-2 border-orange-200 text-orange-400 text-xs px-6 pb-2 pt-2.5 font-medium mt-3 shadow-[0_4px_9px_-4px_#C25802] transition duration-150 ease-in-out hover:bg-orange-100 hover:text-white hover:shadow-none w-[130px] md:w-auto ml-5">
+          <button className="inline-block rounded-full border-2 border-cyan-600 text-cyan-950 text-xs px-6 pb-2 pt-2.5 font-medium mt-3 shadow-[0_4px_9px_-4px_#C25802] transition duration-150 ease-in-out hover:bg-orange-100 hover:text-white hover:shadow-none w-[130px] md:w-auto ml-5">
           Projects
           </button>
       </ScrollLink>
@@ -124,7 +124,7 @@ const Home = () => {
     <img
       src={Hero}
       alt="hero"
-      className="max-w-full mx-auto max-h-screen"
+      className="max-w-full mx-auto max-h-screen md:max-h-96 lg:max-h-90"
       ref={imageRef}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

@@ -1,6 +1,6 @@
 import React from 'react'
 import Tracker from '../assets/tracker.png';
-import Car from '../assets/car.png';
+import Car from '../assets/Agritrack_landing.png';
 import Heal from '../assets/healtech.png';
 import { FaGithub } from 'react-icons/fa';
 const projects = () => {
@@ -8,7 +8,7 @@ const projects = () => {
     <div class="container my-24 mx-auto md:px-6" id="Projects">
   
   <section class="mb-32 text-center lg:text-left">
-    <h2 class="mb-12 text-center text-3xl font-bold text-orange-400">
+    <h2 class="mb-12 text-center text-3xl font-bold text-cyan-600">
       Projects 
     </h2>
     
@@ -22,7 +22,7 @@ const projects = () => {
               class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,0.2)]"></div>
           </a>
         </div>
-        <h5 class="mb-4 text-lg font-bold text-orange-400">Expenses Tracker</h5>
+        <h5 class="mb-4 text-lg font-bold text-cyan-800">Expenses Tracker</h5>
         <div class="mb-4 flex items-center justify-center text-sm font-medium text-danger dark:text-danger-500 lg:justify-start">
         <div class="shrink-0">
                 <div class="">
@@ -49,7 +49,7 @@ const projects = () => {
           </a>
         </div>
 
-        <h5 class="mb-4 text-lg font-bold text-orange-400">Car rent</h5>
+        <h5 class="mb-4 text-lg font-bold  text-cyan-800">Agritrack</h5>
         <div class="mb-4 flex items-center justify-center text-sm font-medium text-primary dark:text-primary-400 lg:justify-start">
         <div class="">
                 
@@ -60,8 +60,8 @@ const projects = () => {
           <a href="">Source Code</a>
         </div>
         <p class="text-neutral-500 dark:text-neutral-300">
-        "A user-friendly app facilitating car rentals in town. 
-        Rent a car hassle-free or earn by listing yours for rent."
+        Agritrack is a web-based application designed to empower smallholder 
+        farmers by giving them the tools to track their crops effectively.
         </p>
       </div>
 
@@ -74,7 +74,7 @@ const projects = () => {
           </a>
         </div>
 
-        <h5 class="mb-4 text-lg font-bold text-orange-400">HealTech</h5>
+        <h5 class="mb-4 text-lg font-bold  text-cyan-800">HealTech</h5>
         <div class="mb-4 flex items-center justify-center text-sm font-medium text-warning lg:justify-start">
         <div class="">
                 
@@ -85,8 +85,8 @@ const projects = () => {
           <a href="https://github.com/abraham-diress/HealTech">Source Code</a>
         </div>
         <p class="text-neutral-500 dark:text-neutral-300">
-        "A mobile app enabling users to find nearby hospitals, providing essential information 
-        about facilities and doctors for quick access to healthcare resources."
+        A mobile app enabling users to find nearby hospitals, providing essential information 
+        about facilities and doctors for quick access to healthcare resources.
         </p>
       </div>
     </div>

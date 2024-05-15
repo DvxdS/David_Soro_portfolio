@@ -27,13 +27,13 @@ const Navbar = () => {
           className="ml-2 font-bold text-2xl tracking-tighter cursor-pointer"
           onClick={scrollToTop}
         >
-          Dav<span className="text-orange-400">.dev</span>
+          Dav<span className="text-cyan-600">.dev</span>
         </span>
       </div>
       <div className="flex items-center ml-auto space-x-10">
         <ul className={`list-none sm:flex flex-row ${toggle ? '' : 'hidden'}`}>
           <li
-            className={`${active === '/' ? 'text-orange-400' : 'text-black'} hover:text-orange-400 font-bold mr-12`}
+            className={`${active === '/' ? 'text-cyan-600' : 'text-black'} hover:text-cyan-600 font-bold mr-12`}
           >
             <ScrollLink
               to="home"
@@ -46,7 +46,7 @@ const Navbar = () => {
             </ScrollLink>
           </li>
           <li
-            className={`${active === '/About' ? 'text-orange-400' : 'text-neutral-600'} hover:text-orange-400 font-bold mr-12`}
+            className={`${active === '/About' ? 'text-orange-400' : 'text-neutral-600'} hover:text-cyan-600 font-bold mr-12`}
           >
             <ScrollLink
               to="About"
@@ -59,7 +59,7 @@ const Navbar = () => {
             </ScrollLink>
           </li>
           <li
-            className={`${active === '/Skills' ? 'text-orange-400' : 'text-neutral-600'} hover:text-orange-400 font-bold mr-12`}
+            className={`${active === '/Skills' ? 'text-orange-400' : 'text-neutral-600'} hover:text-cyan-600 font-bold mr-12`}
           >
             <ScrollLink
               to="Skills"
@@ -72,7 +72,7 @@ const Navbar = () => {
             </ScrollLink>
           </li>
           <li
-            className={`${active === '/Projects' ? 'text-orange-400' : 'text-neutral-600'} hover:text-orange-400 font-bold mr-12`}
+            className={`${active === '/Projects' ? 'text-orange-400' : 'text-neutral-600'} hover:text-cyan-600 font-bold mr-12`}
           >
             <ScrollLink
               to="Projects"
@@ -85,7 +85,7 @@ const Navbar = () => {
             </ScrollLink>
           </li>
           <li
-            className={`${active === '/Contacts' ? 'text-orange-400' : 'text-neutral-600'} hover:text-orange-400 font-bold mr-12`}
+            className={`${active === '/Contacts' ? 'text-orange-400' : 'text-neutral-600'} hover:text-cyan-600 font-bold mr-12`}
           >
             <ScrollLink
               to="Contacts"
@@ -101,7 +101,7 @@ const Navbar = () => {
 
         <div className="sm:hidden">
           <button
-            className="text-gray-600 hover:text-orange-400"
+            className="text-gray-600 hover:text-cyan-600"
             onClick={handleToggle}
             aria-label="Toggle Menu"
           >

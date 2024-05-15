@@ -25,14 +25,18 @@ function App() {
     <div className="relative z-0">
       <BrowserRouter>
         {showMainContent ? (
-          <div>
+          <div className='ml-10 mr-10'>
             <Navbar />
+            <div className= "mt-6">
             <Home />
             <About />
+            
             <Stack />
             <Skills />
             <Projects />
             <Contacts />
+
+            </div>
           </div>
         ) : (
           <OpeningAnimation />

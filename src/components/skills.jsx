@@ -4,7 +4,7 @@ import { FaDesktop, FaServer } from 'react-icons/fa';
 const Skills = () => {
   return (
     <div className="p-8 md:p-20 bg-white mt-10" id="Skills">
-     <h2 class="mb-12 text-center text-3xl font-bold text-orange-400">
+     <h2 class="mb-12 text-center text-3xl font-bold text-cyan-600">
       My Skills 
     </h2>
       <div className="flex flex-col md:flex-row items-center justify-center">
