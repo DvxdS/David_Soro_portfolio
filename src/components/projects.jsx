@@ -1,5 +1,5 @@
 import React from 'react'
-import Tracker from '../assets/ML_MODEL.png';
+import Tracker from '../assets/ML.png';
 import Car from '../assets/Agritrack_landing.png';
 import Heal from '../assets/healtech.png';
 import { FaGithub } from 'react-icons/fa';
