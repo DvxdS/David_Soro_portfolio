@@ -1,5 +1,5 @@
 import React from 'react'
-import Tracker from '../assets/tracker.png';
+import Tracker from '../assets/car.png';
 import Car from '../assets/Agritrack_landing.png';
 import Heal from '../assets/healtech.png';
 import { FaGithub } from 'react-icons/fa';
@@ -22,7 +22,7 @@ const projects = () => {
               class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,0.2)]"></div>
           </a>
         </div>
-        <h5 class="mb-4 text-lg font-bold text-cyan-800">Expenses Tracker</h5>
+        <h5 class="mb-4 text-lg font-bold text-cyan-800"></h5>
         <div class="mb-4 flex items-center justify-center text-sm font-medium text-danger dark:text-danger-500 lg:justify-start">
         <div class="shrink-0">
                 <div class="">
@@ -35,8 +35,7 @@ const projects = () => {
           <a href="">Source Code</a>
         </div>
         <p class="text-neutral-500 dark:text-neutral-300">
-        A money tracker web app that allows the user to create an accounts and set up financial goal 
-        then enter his expenses then got recommendation on how to achieve his goal
+      
         </p>
       </div>
 
